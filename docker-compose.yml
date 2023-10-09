@@ -15,7 +15,7 @@ services:
     image: prom/prometheus:v2.42.0
     ports:
       - "9090:9090"
-    # Change 77.222.52.251 to ip address of node where docker satck is deployed     1
+    # Change 77.222.52.251 to ip address of node where docker satck is deployed
     command: 
       - "--config.file=/etc/prometheus/prometheus.yml"
       - "--storage.tsdb.path=/prometheus" 
