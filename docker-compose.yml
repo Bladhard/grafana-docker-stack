@@ -31,7 +31,7 @@ services:
     image: prom/alertmanager:v0.25.0
     ports:
       - "9093:9093"
-    # Change 127.0.0.1 to ip address of node where docker satck is deployed 
+    # Change 127.0.0.1 to ip address of node where docker satck is deployed 1
     command: 
       - "--config.file=/etc/alertmanager/alertmanager.yml"
       - "--storage.path=/alertmanager" 
